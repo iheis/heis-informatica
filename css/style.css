@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Varela+Round&display=swap');
+
+
+
+* 
+    {margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+body {
+    text-align: center;
+    background-image: url(../img/fondoCelular.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1250px;
+    position: relative;
+
+}
+
+header {
+    background-image: url(../img/header.png);
+    grid-area: header;
+    height: 450PX;
+    position: sticky;
+    top: 0%;
+}
+
+section {}
+
+
+
+
+
+
+
+nav ul li {
+    display: list-item;
+
+    font-size: 15px;
+    padding: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 3px;
+
+
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    border-radius: 30px;
+    background-color: rgba(207, 206, 206, 0.466);
+    padding: 5px;
+    border: solid black;
+    color: black;
+
+}
+
+
+
+main {
+    background-color: #7fc5da80;
+    grid-area: main;
+    height: 1200px;
+    padding: 20px;
+
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.primerSeccion {
+    background-color: #c0c0c0;
+    grid-area: seccionA;
+    height: 300px;
+    border-radius: 20px;
+    padding-bottom: 50px;
+    display: none;
+    margin: 20px
+}
+
+h3 {
+
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    padding: 20px;
+
+
+}
+
+.segundaSeccion {
+    background-color: #583db8c9;
+    grid-area: seccionB;
+    height: 260px;
+    border-radius: 20px;
+    display: none;
+    margin: 20px
+}
+
+aside {
+    background-color: #d1dde080;
+    grid-area: publicidad;
+    height: 300px;
+    margin: 20px;
+    border-radius: 20px;
+
+}
+
+footer {
+    background-color: #65ecd6;
+    grid-area: footer;
+    height: 100px;
+    position: absolute;
+    width: 100%;
+
+
+
+
+
+
+}
+
+
+@media (min-width:768px) {
+    .gridPadre {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "main seccionA"
+            "main seccionA"
+
+            "publicidad publicidad"
+            "footer footer"
+        ;
+        gap: 20px;
+    }
+
+    main {
+        height: 900px;
+    }
+
+    nav ul li {
+        display: inline-block;
+    }
+
+    header {
+        height: 250px;
+    }
+
+    footer {
+        position: absolute;
+        width: 100%
+    }
+
+    .primerSeccion {
+        display: inline-block;
+        height: 600px;
+    }
+
+    aside {
+        height: 200px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+
+}
+
+
+
+@media (min-width:1024px) {
+    .gridPadre {
+        display: grid;
+        grid-template-areas:
+            "header header header"
+            "main main seccionA"
+            "main main seccionB"
+            "publicidad publicidad publicidad"
+            "footer footer footer"
+        ;
+    }
+
+    nav ul li {
+        display: inline-block;
+    }
+
+    header {
+        height: 250px;
+    }
+
+    .logo {
+        align-items: left;
+    }
+
+    footer {
+        position: absolute;
+        width: 100%
+    }
+
+    .segundaSeccion {
+        display: inline-block;
+        height: 400px;
+    }
+
+    .primerSeccion {
+
+        height: 400px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+}
