@@ -22,12 +22,12 @@ body {
 header {
     background-image: url(../img/header.png);
     grid-area: header;
-    height: 450PX;
+    height: 350PX;
     position: sticky;
     top: 0%;
 }
 
-section {}
+ 
 
 
 
@@ -38,9 +38,9 @@ section {}
 nav ul li {
     display: list-item;
 
-    font-size: 15px;
+    font-size: 10px;
     padding: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     margin-bottom: 3px;
 
 
@@ -50,7 +50,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     border-radius: 30px;
-    background-color: rgba(207, 206, 206, 0.466);
+    background-image: radial-gradient(rgba(211, 202, 202, 0.712),rgba(139, 211, 245, 0.575) );
     padding: 5px;
     border: solid black;
     color: black;
@@ -60,7 +60,7 @@ nav ul li a {
 
 
 main {
-    background-color: #7fc5da80;
+    background-image: radial-gradient(#eeecec, rgba(121, 115, 136, 0.637), rgba(82, 83, 185, 0.712)  ) ;
     grid-area: main;
     height: 1200px;
     padding: 20px;
@@ -70,7 +70,7 @@ main {
 }
 
 .primerSeccion {
-    background-color: #c0c0c0;
+    background-image: radial-gradient(#eeecec, rgba(184, 220, 236, 0.521), rgba(108, 206, 248, 0.541)  ) ;
     grid-area: seccionA;
     height: 300px;
     border-radius: 20px;
@@ -93,7 +93,7 @@ p {
 }
 
 .segundaSeccion {
-    background-color: #583db8c9;
+    background-image: radial-gradient(#eeecec,  #583db8c9  ); 
     grid-area: seccionB;
     height: 260px;
     border-radius: 20px;
@@ -148,7 +148,7 @@ footer {
     }
 
     header {
-        height: 250px;
+        height: 200px;
     }
 
     footer {
@@ -162,7 +162,7 @@ footer {
     }
 
     aside {
-        height: 200px;
+        height: 180px;
     }
 
     p {
@@ -191,28 +191,52 @@ footer {
     }
 
     header {
-        height: 250px;
+        height: 180px;
     }
 
     .logo {
         align-items: left;
     }
 
-    footer {
-        position: absolute;
-        width: 100%
-    }
+   
 
-    .segundaSeccion {
-        display: inline-block;
-        height: 400px;
-    }
+  
 
     .primerSeccion {
 
         height: 400px;
+        width: 600px;
+        transition: all 0.4s;
     }
     
+    .primerSeccion:hover{
+        height: 500px;
+        width: 700px;
+        
+
+    }
+
+  
+
+    .segundaSeccion {
+        display: inline-block;
+        height: 400px;
+        width: 600px;
+        transition: all 0.4s;
+    }
+
+    .segundaSeccion:hover{
+        height: 500px;
+        width: 700px;
+        
+        }
+
+        footer {
+            position: absolute;
+            width: 100%
+        }
+
+
 
     p {
         font-size: 22px;
